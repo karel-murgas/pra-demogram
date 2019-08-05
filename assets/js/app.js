@@ -218,7 +218,8 @@ window.btoa = window.btoa || function () {
         $nextStepTabLink.tab('show');
 
         eventData = {
-          event: 'wizard' + ((nextStep === 3) ? 'Success' : 'Step' + nextStep) + 'Loaded'
+          event: 'wizard' + ((nextStep === 3) ? 'Success' : 'Step' + nextStep) + 'Loaded',
+          formStep: nextStep.toString()
         };
 
         console.log("Pushing to Data Layer: " + JSON.stringify(eventData, null, 2));
