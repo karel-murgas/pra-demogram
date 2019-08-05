@@ -219,6 +219,7 @@ window.btoa = window.btoa || function () {
 
         eventData = {
           event: 'wizard' + ((nextStep === 3) ? 'Success' : 'Step' + nextStep) + 'Loaded',
+          formId: 'Wizard',
           formStep: nextStep.toString()
         };
 
